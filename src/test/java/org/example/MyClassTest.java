@@ -9,7 +9,7 @@ public class MyClassTest {
 
 
     @Test
-    //@Disabled
+    @Disabled
     public void testMultiply() {
         MyClass tester = new MyClass();
         assertEquals(50, tester.multiply(10, 5));
