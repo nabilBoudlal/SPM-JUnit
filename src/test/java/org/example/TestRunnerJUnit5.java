@@ -23,8 +23,8 @@ public class TestRunnerJUnit5 {
     public static void main(String args[]) {
         final LauncherDiscoveryRequest request =
                 LauncherDiscoveryRequestBuilder.request()
-                        .selectors(selectClass(MyClassTest.class))
-                        .selectors(selectClass(HelloWorldTest.class))
+                        .selectors(DiscoverySelectors.selectClass(MyClassTest.class))
+                        .selectors(DiscoverySelectors.selectClass(HelloWorldTest.class))
                         .build();
 
         final Launcher launcher = LauncherFactory.create();
