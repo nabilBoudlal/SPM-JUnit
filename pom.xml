@@ -99,7 +99,17 @@
             <failOnMissingWebXml>false</failOnMissingWebXml> <!-- Optional -->
           </configuration>
         </plugin>
-        <!-- https://mvnrepository.com/artifact/org.json/json -->
+
+        <plugin>
+          <groupId>org.apache.tomcat.maven</groupId>
+          <artifactId>tomcat7-maven-plugin</artifactId>
+          <version>2.2</version>
+          <configuration>
+            <username>war-deployer</username>
+            <password>maven-tomcat-plugin</password>
+            <update>true</update>
+          </configuration>
+        </plugin>
       </plugins>
     </pluginManagement>
   </build>
