@@ -38,8 +38,9 @@ class ChromeTest {
         assertTrue(title.contains("Selenium WebDriver"), "The string does contain the expected substring");
     }
 
-    @Disabled
+
     @Test
+    @Tag("AcceptanceTest")
     void testApp(){
         driver.get("http://localhost:8080/MavenTest2/");
         String title = driver.getTitle();
